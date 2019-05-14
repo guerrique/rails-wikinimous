@@ -1,4 +1,13 @@
+<div class="row justify-content-center">
+  <div class="col-sm-9">
 <h1><%= @article.title %></h1>
-<%= @article.content %>
-<%= link_to 'edit', edit_article_path %>
-<%= link_to 'back to the list', articles_path %>
+    <div class="articles" class="text-justify">
+      <%= @article.content %>
+    </div>
+    <p>
+      <%= link_to 'edit', edit_article_path, class: "create-btn" %>
+      <%= link_to 'delete', article_path(@article), class: "create-btn", method: :delete, data: { confirm: "Are you sure? Really?"} %>
+      <%= link_to 'back to the list', articles_path, class: "create-btn" %>
+    </p>
+  </div>
+</div>

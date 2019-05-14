@@ -1,3 +1,32 @@
 // Place all the styles related to the Articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.container {
+  margin: O auto;
+}
+
+.content {
+  margin: 30px 100px;
+  h1 {
+    margin: 30px 0;
+  }
+  a {
+    color: black;
+    font-size: 20px;
+  }
+  a:hover {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.articles {
+  margin-bottom: 30px;
+}
+
+.create-btn {
+  background-color: #efeded;
+  padding: 10px;
+  border-radius: 5px;
+  color: grey;
+}

@@ -1,11 +1,11 @@
 <h1>Articles</h1>
-<%= link_to 'Add a new article', new_article_path %>
-<ul>
-  <% @articles.each do |article| %>
-  <li>
-    <%= link_to article.title, article_path(article) %>
-    <%= link_to 'edit', edit_article_path(article) %>
-    <%= link_to 'delete', article_path(article), method: :delete, data: { confirm: "Are you sure? Really?"} %>
-  </li>
-  <% end %>
-</ul>
+
+<div class="articles">
+<% @articles.each do |article| %>
+<div>
+  <%= link_to article.title, article_path(article) %>
+</div>
+<% end %>
+</div>
+
+<%= link_to 'Add a new article', new_article_path, class: "create-btn" %>
